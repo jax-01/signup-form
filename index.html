@@ -3,9 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>Signup form</title>
 </head>
 <body>
-  
+  <div id="banner">
+    <img src="./img/odin-lined.png" alt="Odin logo">
+    <h1 id="heading">ODIN</h1>
+  </div>
+  <div class="content">
+    <div class="description">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. You know you want to.</p>
+    </div>
+    <div class="form">
+      <form action="#">
+        <fieldset>
+          <legend>Let's do this!</legend>
+          <div class="name-fields">
+            <div class="fields">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="fields">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+          </div>
+          <div class="contact-fields">
+            <div class="fields">
+              <label for="email">EMAIL</label>
+              <input type="text" name="email" id="email" required>
+            </div>
+            <div class="fields">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="text" name="phone-number" id="phone-number" required>
+            </div>
+          </div>
+          <div class="password-fields">
+            <div class="fields">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div class="fields">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" name="confirm-password" id="confirm-password" required>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
