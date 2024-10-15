@@ -22,7 +22,7 @@
     <div class="form">
       <form action="#">
         <fieldset class="left-indent">
-          <legend>Let's do this!</legend>
+          <p>Let's do this!<p>
           <div class="name-fields">
             <div class="fields">
               <label for="first-name">FIRST NAME</label>
@@ -36,7 +36,7 @@
           <div class="contact-fields">
             <div class="fields">
               <label for="email">EMAIL</label>
-              <input type="text" name="email" id="email" required>
+              <input type="email" name="email" id="email" required>
             </div>
             <div class="fields">
               <label for="phone-number">PHONE NUMBER</label>
@@ -46,11 +46,12 @@
           <div class="password-fields">
             <div class="fields">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" required>
+              <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+              <p id="pass-requirement"></p>
             </div>
             <div class="fields">
               <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input type="password" name="confirm-password" id="confirm-password" required>
+              <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
             </div>
           </div>
         </fieldset>
