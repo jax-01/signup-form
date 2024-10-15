@@ -3,9 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>Signup form</title>
 </head>
 <body>
-  
+  <div id="image-sidebar">
+    <div id="banner">
+      <img id="odin-logo" src="./img/odin-lined.png" alt="Odin logo">
+      <h1 id="heading">ODIN</h1>
+    </div>
+    <p id="credit">Photo by <a href="https://unsplash.com/@itsmaemedia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shayna Douglas</a> on <a href="https://unsplash.com/photos/golden-retriever-puppy-on-snow-covered-ground-during-daytime-lgILhKUELg4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+  </div>
+  <div class="content">
+    <div class="description left-indent">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <span class="italic">now</span> to get started.</p>
+      <p>You <span class="italic">know</span> you want to.</p>
+    </div>
+    <div class="form">
+      <form action="#">
+        <fieldset class="left-indent">
+          <p>Let's do this!<p>
+          <div class="name-fields">
+            <div class="fields">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="fields">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+          </div>
+          <div class="contact-fields">
+            <div class="fields">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="fields">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="text" name="phone-number" id="phone-number" required>
+            </div>
+          </div>
+          <div class="password-fields">
+            <div class="fields">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+              <p id="pass-requirement"></p>
+            </div>
+            <div class="fields">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </div>
+          </div>
+        </fieldset>
+        <div class="submit left-indent">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
