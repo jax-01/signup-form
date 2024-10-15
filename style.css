@@ -34,3 +34,50 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* ----- */
+@font-face {
+  font-family: norse-bold;
+  src: url(./font/Norse-Bold.otf);
+}
+
+h1 {
+  color: white;
+  font-size: 6rem;
+  
+  font-family: norse-bold, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#image-sidebar {
+  background-image: url(./img/dog.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 75vh;
+}
+
+#banner {
+  background-color: rgba(0, 0, 0, 0.400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  width: inherit;
+  margin-top: auto;
+}
+
+#odin-logo {
+  height: 15vh;
+}
+
+#credit {
+  margin-top: auto;
+  color: white;
+}
+
+#credit > a {
+  color: white;
+}
